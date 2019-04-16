@@ -1,0 +1,74 @@
+.hero {
+  &-text {
+    position: relative;
+    top: 35%;
+    color: $color-white;
+    & h2 {
+      font-size: 50px;
+    }
+    & span {
+      color:$color-confetti;
+    }
+
+    & p {
+      font-size: 30px;
+    }
+  }
+}
+.hero-slide-1 {
+  background: url('../images/bgd_swiper1.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+.hero-slide-2 {
+  background: url('../images/bgd_swiper2.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+.hero-slide-3 {
+  background: url('../images/bgd_swiper3.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 800px;
+}
+.swiper-pagination1 {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: 9;
+  top: unset;
+  flex-direction: row;
+  justify-content: center;
+  bottom: 0px;
+
+}
+.swiper-pagination-bullet {
+  width: 70px;
+  height: 40px;
+  text-align: center;
+  line-height: 20px;
+  font-size: 12px;
+  border-radius: 0;
+  color: $color-white;
+  opacity: 1;
+  border-left: 1px solid $color-confetti;
+  background:0;
+  margin: 0px!important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s all;
+  font-size: 16px;
+  &-active {
+    background: rgba(246, 249, 47, 0.45);
+  }
+
+  &:nth-child(3){
+    border-right: 1px solid $color-confetti;
+  }
+}

@@ -1,0 +1,38 @@
+.page-rod-useage {
+  text-align: center;
+  position: relative;
+}
+.rod-triangle {
+  z-index: -1;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 530px 240px 490px 0;
+  border-color: transparent $color-valencia transparent transparent;
+  position: absolute;
+  right:0;
+}
+.rod-elements {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.wraper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.rod-useage-box {
+  text-align: left;
+  padding: 50px 10px 0px 10px;
+  & h3 {
+    border-bottom: 1px solid $color-mine-shaft;
+  }
+}
+.rod-icon {
+  text-align: right;
+  & i {
+    color: $color-marinier;
+    font-size: 50px;
+  }
+}

@@ -1,0 +1,36 @@
+{
+	"name": "markup-boilerplate",
+	"version": "0.0.7",
+	"description": "boilerplate for markup projects",
+	"author": {
+		"name": "Krystian Kupiec",
+		"url": "http://velein.pl"
+	},
+	"main": "gulpfile.js",
+	"dependencies": {
+		"@babel/core": "^7.1.2",
+		"@babel/preset-env": "^7.1.0",
+		"babel-loader": "^8.0.4",
+		"browser-sync": "^2.26.3",
+		"chalk": "^2.4.1",
+		"del": "^3.0.0",
+		"gulp": "3.9.1",
+		"gulp-autoprefixer": "^6.0.0",
+		"gulp-if": "^2.0.2",
+		"gulp-load-plugins": "^1.5.0",
+		"gulp-require-tasks": "^1.2.1",
+		"run-sequence": "^2.2.1",
+		"swiper": "^4.5.0",
+		"webpack": "^4.20.2",
+		"webpack-stream": "^5.1.1"
+	},
+	"devDependencies": {
+		"gulp-file-include": "^2.0.1",
+		"gulp-plumber": "^1.2.0",
+		"gulp-sass": "^4.0.1"
+	},
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"license": "MIT"
+}

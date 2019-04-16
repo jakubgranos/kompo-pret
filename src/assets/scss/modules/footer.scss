@@ -1,0 +1,41 @@
+.footer {
+  width: 100%;
+  height: auto;
+  background: $color-mine-shaft;
+  color: $color-white;
+  padding: 140px 0 10px 0;
+  &-wrapper {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  & i {
+    font-size: 25px;
+  }
+
+  & a {
+    color: $color-white;
+  
+    &:hover {
+      color: $color-white;
+      border-bottom: 1px solid $color-confetti;
+    }
+  }
+}
+.footer-contact {
+  width: 100%;
+}
+.privacy {
+  text-align: center;
+  margin: 30px 0 0px 0;
+  
+  & h3 {
+    font-size: 14px;
+  }
+}
+.email, .adres, .phone {
+  @include media('<lg') {
+    margin: 20px 0 20px 0;
+  }
+}

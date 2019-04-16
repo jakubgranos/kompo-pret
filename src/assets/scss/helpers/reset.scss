@@ -1,0 +1,27 @@
+/* box-sizing for all elements */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+/* iOS reset for rounded elements */
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"] {
+	appearance: none;
+	border-radius: 0
+}
+
+/* remove margin from figure tag */
+figure {
+	margin: 0;
+}
+a {
+	text-decoration: none;
+	
+	&:hover {
+		text-decoration: none;
+	}
+}

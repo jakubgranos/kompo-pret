@@ -1,0 +1,10 @@
+/* Breakpoints
+   ========================================================================== */
+
+/**
+ * Set breakpoints for @include media
+ * Bootstrap breakpoints are set by deafult
+ */
+
+$breakpoints: (sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+$max-width: 1920px;

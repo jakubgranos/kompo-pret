@@ -1,0 +1,104 @@
+
+.header {
+  width: 100%;
+  height: auto;
+  font-family: $font-raleway;
+  color: $color-white;
+  z-index: 10;
+  position: absolute;
+  padding: 10px 0 10px 0;
+}
+.logo {
+  @include media('<lg'){
+    text-align: center;
+  }
+
+  & img {
+    width: 210px;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+}
+.navigation ul, .active, .desactive {
+  display: flex;
+  flex-direction: row;
+  padding: 0px;
+  margin: 0px;
+  @include media('<lg'){
+    flex-direction: column;
+    padding: 0 0 0 8px;
+  }
+
+  & li {
+    padding: 5px 15px 0 15px;
+    font-size: 20px;
+    transition: all 0.2s;
+    list-style-type: none;
+    @include media('<lg'){
+      margin: 15px 0px 10px 0px;
+      border-left: 1px solid $color-confetti;
+    }
+  }
+  & a {
+    color: $color-white;
+    &:hover {
+      border-bottom: 2px solid $color-confetti;
+    }
+  }
+  
+}
+.hamburger-menu, .sticky{
+  background: $color-valencia;
+	font-size: 25px;
+  padding: 5px 10px 5px 15px;
+  margin: 0 0 10px 0;
+	@include media('>=lg') {
+		display: none;
+	}
+}
+.desactive {
+	@include media('<lg') {
+		width: 50%;
+		height: 100%;
+  	position: fixed;
+  	z-index: 1;
+    top: 47px;
+		left: 0;
+  	overflow: hidden;
+		opacity: 0;
+		visibility: hidden;
+		transition: all 200ms;
+  }
+  @include media('<sm') {
+    width: 100%;
+  }
+}
+.active{
+  width: auto;
+	@include media('<lg') {
+    display: flex;
+    background: $color-mine-shaft;
+    width: 40%;
+    height: 100%;
+    position: fixed;
+    z-index: 10;
+    top: 47px;
+    left: 0;
+    overflow: hidden;
+    visibility: visible;
+    opacity: 1;
+    transition: all 200ms;
+  }
+  @include media('<sm') {
+    width: 100%;
+  }
+}
+.hamburger-menu, .sticky {
+  width: 100%;
+  z-index: 20;
+  transition: 1s all;
+  top: 0;
+  position: fixed;
+}
