@@ -7,3 +7,4 @@ import sliders from "./modules/swiper"
 sliders();
 
 import  "./modules/hamburger-menu"
+import  "./modules/stickyNav"
