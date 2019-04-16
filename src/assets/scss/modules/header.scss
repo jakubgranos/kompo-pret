@@ -49,7 +49,7 @@
   }
   
 }
-.hamburger-menu, .sticky{
+.hamburger-menu{
   background: $color-valencia;
 	font-size: 25px;
   padding: 5px 10px 5px 15px;
@@ -95,10 +95,20 @@
     width: 100%;
   }
 }
-.hamburger-menu, .sticky {
+.hamburger-menu,{
   width: 100%;
   z-index: 20;
   transition: 1s all;
   top: 0;
   position: fixed;
+}
+.header {
+  @include media('>lg'){
+    width: 100%;
+    z-index: 20;
+    transition: 1s all;
+    top: 0;
+    position: fixed;
+    background: $color-valencia;
+  }
 }
